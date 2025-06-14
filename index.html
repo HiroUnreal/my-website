@@ -293,40 +293,41 @@
         <li><strong>Adicción y pérdida de tiempo:</strong> Uso excesivo...</li>
         <li><strong>Ciberacoso:</strong> Hostigamiento virtual...</li>
         <li><strong>Desinformación:</strong> Difusión rápida de noticias falsas...</li>
-        <li><strong>Impacto en la autoestima:</strong> Comparación constante...</li>
+        <li><strong>Impacto en la salud mental:</strong> Ansiedad y depresión...</li>
       </ul>
-      <img src="images/riesgos.jpg" alt="Riesgos de redes sociales" />
+      <img src="images/riesgos.jpg" alt="Alerta de seguridad" />
     </section>
 
     <section id="beneficios" class="content-section fade-in">
       <h2>Beneficios de las Redes Sociales</h2>
-      <p>Las redes sociales también aportan numerosas ventajas...</p>
+      <p>Las redes sociales ofrecen numerosas ventajas cuando se usan de forma responsable...</p>
       <ul>
-        <li><strong>Comunicación instantánea:</strong> Conectar en tiempo real...</li>
-        <li><strong>Acceso a información:</strong> Difusión rápida de noticias...</li>
-        <li><strong>Oportunidades profesionales:</strong> Networking y promoción de negocios...</li>
-        <li><strong>Apoyo social y comunidades:</strong> Compartir consejos y apoyo emocional...</li>
-        <li><strong>Promoción cultural y creativa:</strong> Para artistas y emprendedores...</li>
+        <li><strong>Comunicación instantánea:</strong> Mantener contacto con amigos y familia.</li>
+        <li><strong>Oportunidades profesionales:</strong> Networking y búsqueda de empleo.</li>
+        <li><strong>Acceso a información y noticias:</strong> Actualización en tiempo real.</li>
+        <li><strong>Expresión y creatividad:</strong> Plataformas para compartir ideas y arte.</li>
+        <li><strong>Apoyo social:</strong> Grupos y comunidades de interés.</li>
       </ul>
-      <img src="images/beneficios.jpg" alt="Beneficios de redes sociales" />
+      <img src="images/beneficios.jpg" alt="Persona feliz usando móvil" />
     </section>
 
     <section id="conclusion" class="content-section fade-in">
       <h2>Conclusión</h2>
-      <p>Las redes sociales son herramientas poderosas que han cambiado radicalmente la forma en que interactuamos...</p>
+      <p>El uso responsable de las redes sociales puede maximizar sus beneficios y minimizar sus riesgos. Es fundamental estar informados y conscientes de nuestra actividad en línea.</p>
     </section>
   </main>
 
   <footer>
-    2025 Creado por SZI
+    &copy; 2025 Redes Sociales. Todos los derechos reservados.
   </footer>
 
   <script>
-    const fadeIns = document.querySelectorAll('.fade-in');
+    // Efecto aparición suave al hacer scroll
+    const faders = document.querySelectorAll('.fade-in');
 
     const appearOptions = {
       threshold: 0.2,
-      rootMargin: "0px 0px -100px 0px"
+      rootMargin: "0px 0px -50px 0px"
     };
 
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
@@ -337,8 +338,8 @@
       });
     }, appearOptions);
 
-    fadeIns.forEach(section => {
-      appearOnScroll.observe(section);
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
     });
   </script>
 </body>
